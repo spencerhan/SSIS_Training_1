@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="Sample FLAT File Source Data"
-  DTS:DTSID="{4D4D6E5D-5AD0-408F-A31B-150CB7A11413}"
+  DTS:ObjectName="Sample Flat File Source Data"
+  DTS:DTSID="{83091C41-9FD9-4E82-BF9C-50444D5DAA69}"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:Format="Delimited"
       DTS:LocaleID="1033"
       DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x003C_none_x003E_"
       DTS:CodePage="1252"
@@ -19,24 +20,24 @@
           DTS:DataType="4"
           DTS:TextQualified="True"
           DTS:ObjectName="AverageRate"
-          DTS:DTSID="{EF58ABC1-1A65-4327-8D1A-AEE7CE4C9952}"
+          DTS:DTSID="{53C0EE07-59BE-4960-9E3B-3D9C1364732D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
           DTS:ColumnDelimiter="_x0009_"
-          DTS:MaximumWidth="3"
+          DTS:MaximumWidth="50"
           DTS:DataType="130"
           DTS:TextQualified="True"
           DTS:ObjectName="CurrencyID"
-          DTS:DTSID="{C2FF9DB8-9B3F-46BB-A40E-F9962E5705F9}"
+          DTS:DTSID="{68FEACF0-28D2-4AD7-8633-C688CEF355E2}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
           DTS:ColumnDelimiter="_x0009_"
-          DTS:DataType="133"
+          DTS:DataType="134"
           DTS:TextQualified="True"
           DTS:ObjectName="CurrencyDate"
-          DTS:DTSID="{1189ACB2-4DD2-4BF5-9A8F-829011D8E67F}"
+          DTS:DTSID="{01072389-E50D-49CA-B1F3-2338E781251E}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -44,7 +45,7 @@
           DTS:DataType="4"
           DTS:TextQualified="True"
           DTS:ObjectName="EndOfDayRate"
-          DTS:DTSID="{EB22BCB6-4F0E-4ABB-9D76-FDDADD798184}"
+          DTS:DTSID="{080A5C1C-94D9-46D5-A35F-F4FB452870F1}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>
