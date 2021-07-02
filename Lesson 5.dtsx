@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="WINDEV2104EVAL"
   DTS:CreatorName="WINDEV2104EVAL\User"
-  DTS:DTSID="{596F8B51-E5A8-4A02-8B3F-344E5C0A59D2}"
+  DTS:DTSID="{7ECA41C1-4906-4A82-BFA8-1E8FA3052432}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.167"
   DTS:LocaleID="1033"
   DTS:ObjectName="Lesson 5"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{B6945E7F-96CE-4813-8B5F-A4758260B9D8}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{4E44CF29-0880-4010-823A-34873D5CBA78}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -205,6 +205,16 @@
         DTS:DataType="8"
         xml:space="preserve"></DTS:VariableValue>
     </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3D794428-32A9-4748-9584-F5F31A94EB49}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varFolderName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
   </DTS:Variables>
   <DTS:LoggingOptions
     DTS:FilterKind="0"
@@ -222,10 +232,12 @@
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
         DTS:DTSID="{98EE9BCE-0930-4871-8A46-0E438622D93C}"
         DTS:ObjectName="{98EE9BCE-0930-4871-8A46-0E438622D93C}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::varFolderName]</DTS:PropertyExpression>
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\User\Downloads\Creating a Simple ETL Package\Creating a Simple ETL Package\Sample Data" />
+              Folder="" />
             <FEFEProperty
               FileSpec="Currency_*.txt" />
             <FEFEProperty
@@ -2006,8 +2018,8 @@ where [refTable].[FullDateAlternateKey] = ?</property>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{63C06310-D27C-4FDD-A573-3D4CFFADECB3}"
-          DTS:ObjectName="{63C06310-D27C-4FDD-A573-3D4CFFADECB3}"
+          DTS:DTSID="{26F678DF-845F-4119-AA09-D030F1B9197B}"
+          DTS:ObjectName="{26F678DF-845F-4119-AA09-D030F1B9197B}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::varFileName" />
       </DTS:ForEachVariableMappings>
@@ -2026,14 +2038,14 @@ where [refTable].[FullDateAlternateKey] = ?</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="144,42"
+          Size="144,41.7777777777778"
           Id="Package\Foreach File in Folder\Extract Sample Currency Data"
           TopLeft="43.6666666666667,19.5" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="205,113"
-          Size="205,156"
+          PanelSize="204.888888888889,112.888888888889"
+          Size="204.888888888889,156"
           Id="Package\Foreach File in Folder"
           TopLeft="254,189" />
       </GraphLayout>
